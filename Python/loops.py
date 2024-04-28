@@ -7,4 +7,13 @@
 lists = ["saket","siva","pooja"]
 
 for i in lists:
-    print("hi "+i+"!")
+    if i=="siva":
+        print("hi "+i)
+    else:
+        print("Unauthorized")
+
+
+# i=True
+# while i:
+#     print(maxval)
+    
