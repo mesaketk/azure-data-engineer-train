@@ -1,6 +1,3 @@
-appid - 901932e5-d154-442e-9f4c-fcc11a5e2609
-
-objid - 272c87c9-102a-4993-8325-05637dcd26a5
 
 %sh
 apt-get install -y gnupg2
