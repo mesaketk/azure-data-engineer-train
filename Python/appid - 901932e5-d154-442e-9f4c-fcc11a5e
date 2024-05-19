@@ -1,0 +1,13 @@
+appid - 901932e5-d154-442e-9f4c-fcc11a5e2609
+
+objid - 272c87c9-102a-4993-8325-05637dcd26a5
+
+%sh
+apt-get install -y gnupg2
+curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
+# For Ubuntu 18.04
+curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list > /etc/apt/sources.list.d/mssql-release.list
+# For Ubuntu 20.04
+# curl https://packages.microsoft.com/config/ubuntu/20.04/prod.list > /etc/apt/sources.list.d/mssql-release.list
+apt-get update
+ACCEPT_EULA=Y apt-get install -y msodbcsql18
